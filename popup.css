@@ -1,0 +1,99 @@
+:root {
+    --dark-mode-background: #000d2d;
+    --dark-input-background: #001d3d;
+    --dark-input-color: #eee;
+
+    --delete-button-background: #f55353;
+    --add-button-background: #4caf50;
+    --save-button-background: #007bff;
+}
+
+/* Basic styling for the popup container */
+body {
+    width: 350px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the title */
+#title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+/* Styling for table headers */
+thead tr {
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling for table data cells */
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Styling for buttons */
+button {
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#addNewEntryButton {
+    background-color: var(--add-button-background);
+}
+
+#saveDataButton {
+    background-color: var(--save-button-background);
+}
+
+.delete-button {
+    background-color: var(--delete-button-background);
+}
+
+/* Margin between buttons in the footer */
+tfoot td button {
+    margin-left: 5px;
+}
+
+/* Styling for the Saved animation */
+#savedText {
+    opacity: 0;
+    text-align: center;
+}   
+
+.darkMode {
+    background-color: var(--dark-mode-background);
+    color: white;
+}
+
+.darkInputs {
+    background-color: var(--dark-input-background);
+    color: var(--dark-input-color);
+}
+
+.lightMode {
+    background-color: white;
+    color: black;
+}
